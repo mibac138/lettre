@@ -30,7 +30,8 @@ serde = { version = "^1.0", optional = true, features = ["derive"] }
 serde_json = { version = "^1.0", optional = true }
 fast_chemail = "^0.9"
 r2d2 = { version = "^0.8", optional = true }
-email = { version = "^0.0.20", optional = true }
+# Use an unreleased version to prevent duplicate dependencies
+email = { git = "https://github.com/niax/rust-email", optional = true }
 mime = { version = "^0.3", optional = true }
 time = { version = "^0.1", optional = true }
 uuid = { version = "^0.8", features = ["v4"], optional = true }
